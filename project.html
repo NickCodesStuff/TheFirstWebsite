@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tralive - Best Tours & Travels Website</title>
+  <link rel="stylesheet" href="project.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <nav class="navbar navbar-expand-lg w-100 h-35 position-fixed">
+    <img class="logo ms-5"
+      src="data:image/webp;base64,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">
+    <div class="d-flex justify-content-end w-100 ">
+      <a class="navbuttons " href="#home">Home</a>
+      <a href="#events" class="navbuttons">Blog</a>
+      <a href="#about" class="navbuttons">About</a>
+      <a href="#events" class="navbuttons">Events</a>
+      <a href="#contact" class="navbuttons">Contact</a>
+      <button class="navbar-button ">+10 (67) 678 2567</button>
+    </div>
+  </nav>
+  <br><br><br><br><br>
+  <div>
+    <p class="big-uptext">Lifelong memories just a</p>
+    <p id="big-downtext">few seconds away</p>
+    <br>
+    <p class="small-text">Let's start your journey with us, your dream wil come true</p>
+    <button class="big-button">Explore Destination</button>
+  </div>
+
+  <div>
+    <div class="background-photo">
+      <img class="bus"
+        src="https://preview.colorlib.com/theme/tralive/assets/img/hero/xcar.png.pagespeed.ic.RMwqCTktUn.webp">
+    </div>
+  </div>
+  <br>
+  <div>
+    <p style="text-align: center; color:#7EA0FF;">Check Our Best Promotional Tour</p>
+    <h1 class="middle-big-text">Upcoming Events</h1>
+  </div>
+  <br><br><br>
+
+  <div class="container">
+    <div class="row align-items-start sm-align-items-center">
+      <div class="col">
+
+      </div>
+      <div class="col Card1">
+        <div class="card" style="width: 300px; height: 350px;">
+          <div class="card-img1">
+            <img
+              src="https://preview.colorlib.com/theme/tralive/assets/img/gallery/xservices3.jpg.pagespeed.ic.5mY-dBjrRa.webp"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 style="display: inline; font-weight: 700;">Finlande</h5>
+            <h5 class="price1">$1200</h5>
+            <br><br><br>
+            <button class="Eventsdate1">12 Jan - 18 Jan</button>
+            <p style="display: inline;"> 5 Days</p>
+          </div>
+        </div>
+      </div>
+      <div class="col Card2">
+        <div class="card" style="width: 300px; height: 350px;">
+          <div class="card-img1">
+            <img
+              src="https://preview.colorlib.com/theme/tralive/assets/img/gallery/xservices2.jpg.pagespeed.ic.T_OY2-P6jf.webp"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 style="display: inline; font-weight: 700;">Spitzberg</h5>
+            <h5 class="price1">$1200</h5>
+            <br><br><br>
+            <button class="Eventsdate1">12 Jan - 18 Jan</button>
+            <p style="display: inline;"> 5 Days</p>
+          </div>
+        </div>
+      </div>
+      <div class="col Card3">
+        <div class="card" style="width: 300px; height: 350px;">
+          <div class="card-img1">
+            <img
+              src="https://preview.colorlib.com/theme/tralive/assets/img/gallery/xservices1.jpg.pagespeed.ic.Aq-IpiEePi.webp"
+              class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 style="display: inline; font-weight: 700;">Mega Turkey</h5>
+            <h5 class="price1">$1200</h5>
+            <br><br><br>
+            <button class="Eventsdate1">12 Jan - 18 Jan</button>
+            <p style="display: inline;"> 5 Days</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <section class="gio ">
+    <div class="container w-100">
+      <div class="row">
+        <div class="gio-image-div col">
+          <img class="gio-image"
+            src="https://preview.colorlib.com/theme/tralive/assets/img/gallery/xabout.png.pagespeed.ic.ZsrvwBYE3S.webp"
+            alt="">
+        </div>
+
+        <div class="gio-section col textbox12">
+          <div class="gio-section-text ">
+            <p class="about-us-text">About Us</p>
+            <h1 class="Get-ready-for-real-time-adventure">Get ready for real time adventure</h1>
+            <p class="text-p">Let’s start your journey with us, your dream will come true. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam quis nostrud exercitation.</p>
+
+          </div>
+          <button class="big-button1">Book Your Destination</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br>
+  <div class="review col-12">
+    <div class="review-image w-100">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div>
+            <div class="testimonial-caption ">
+              <div class="testimonial-top-cap ">
+                <h2 class="review-title1 d-flex justify-content-center">What customers say</h2>
+                <p class="review-text1 d-flex justify-content-center">"Let’s start your journey with us, your dream will
+                  come true. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+
+              <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                <div class="founder-img" style="padding: 20px;">
+                  <img
+                    src="data:image/webp;base64,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"
+                    alt="" data-pagespeed-url-hash="1813549078">
+                </div>
+                <div class="founder-text">
+                  <span style="color: white; font-weight: 700;">Mark Anthony</span>
+                  <p style="color: white; font-weight: 700;">CEO of Colorlib</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-xl-5 col-lg-6 col-md-10">
+        <div class="project-caption">
+          <div class="collapse-wrapper">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Starts the automated process.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis
+                    viverra ornane
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    The automated process starts.
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis
+                    viverra ornane
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Automated process starts.
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis
+                    viverra ornane
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Process the automated magic.
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    The automated process starts as soon as your clothes go into the machine. Duis cursus, mi quis
+                    viverra ornane
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-10 col-sm-10">
+        <div class="project-right-cap">
+          <div class="project-right-img">
+            <img
+              src="https://preview.colorlib.com/theme/tralive/assets/img/gallery/xabout2.png.pagespeed.ic.43rxPkv0aJ.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-padding">
+    <div class="container">
+      <div class="video-area section-img-bg2 d-flex align-items-center"
+        data-background="assets/img/gallery/video-bg.jpg"
+        style="background-image: url(&quot;assets/img/gallery/video-bg.jpg&quot;);">
+        <div class="video-wrap">
+          <div class="video-icon">
+
+            <img
+              src="https://media.discordapp.net/attachments/914146486227464243/916656205546549308/video-bg.png?width=967&height=473"
+              alt="" data-pagespeed-url-hash="638970818"
+              onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-muted " style="right:0;background: linear-gradient(
+  135deg,#1a2d6d 0%,#0c1534 100%);">
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(7, 12, 163, 0.05);">
+      Copyright ©2021 All rights reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin:auto;
+
+}
+
+nav{
+    background-color: white;
+    overflow:hidden;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 40px;
+    position: fixed;
+}
+
+
+nav a{
+  color: #00095E;
+  float: right;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-button{
+    float: right;
+    background-color: #FFC800;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    border-color: #FFC800;
+}
+
+.big-uptext{
+    color: #00095E;
+    text-align: center;
+    font-size: 60px;
+    animation: ease-in-out;
+    animation-duration: 5s;
+}
+
+#big-downtext{
+    text-decoration: underline;
+    text-decoration-color: #FFC800;
+    color: #00095E;
+    text-align: center;
+    font-size: 60px;
+    animation: ease-in-out;
+    animation-duration: 5s;
+    margin-top: -40px;
+}
+
+.small-text{
+    font-size: 20px;
+    color: #00095E;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.big-button{
+    background: #091353;
+    font-family: "Roboto",sans-serif;
+    text-transform: inherit;
+    padding: 30px 43px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin-left: 43%;
+    transition: 1s;
+}
+
+.big-button:hover{
+    background-color: #FFC800;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.background-photo{
+    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/hero/h1_hero1.png.webp);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-top: -50px;
+    height: 880px;
+}
+
+.bus{
+    margin-top: 270px;
+    margin-left: 20%;
+    transform: translate(30px);
+    transition: all 1s;
+    animation: bus-moving 7s;
+    animation-iteration-count: infinite;
+}
+
+.middle-big-text{
+    text-align: center;
+    color: #00095E;
+    font-size: 45px;
+}
+
+.bottom{
+    background-color: #091353;
+    width: auto;
+    height: 500px;
+    left: none;
+    margin: auto;
+}
+
+.bottom-left-text{
+    color: #8A8FBE;
+}
+
+
+.bottom-center{ 
+    color: #8A8FBE;
+    text-align: center;
+}
+
+.bottom-center:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#nv{
+    color: white;
+    font-weight: 800;
+}
+
+.bottom-center-side{ 
+    color: #8A8FBE;
+    text-align: center;
+}
+
+.bottom-center-side:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+#sv{
+    color: white;
+    font-weight: 800;
+}
+
+.bottom-right{ 
+    color: #8A8FBE;
+    text-align: right;
+}
+
+
+.cu{
+    color: white;
+    font-weight: 800;
+}
+
+.yellow-text{
+    color: yellow;
+    font-size: 25;
+}
+.navbuttons{
+    transition: 1s;
+    height: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 20px;
+}
+.navbuttons:hover{
+    border-bottom:cyan 1px solid ;
+}
+
+.project-right-cap .project-right-img img {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.accordion .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+.project-us .collapse-wrapper .card {
+    border: 0em;
+    border-radius: 0;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.col-xl-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.project-us .collapse-wrapper .card-body {
+    background: #fff;
+    padding: 20px 38px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.Book-Your-Destination{
+    background-color: yellow;
+}
+.gio-image2{
+    width: 1350px;
+    height: 300px;
+}
+
+.gio-image2-text{
+    justify-content: center;
+    text-align: center;
+    margin-top: -300px;
+    margin-left: 300px;
+    width: 600px;
+}
+.gio-section{
+    margin-top: 500px;
+    padding-left: 700px;
+    margin-top: -400px;
+    width: 600px;
+}
+
+
+
+.gr-backgrnd1{
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+
+.big-button1{
+    background: #091353;
+    font-family: "Roboto",sans-serif;
+    text-transform: inherit;
+    padding: 30px 43px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin-left: 0;
+    transition: 1s;
+}
+
+.big-button1:hover{
+    background-color: #FFC800;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.textbox12{
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+}
+.videolink1{
+    background-image: url(take-a-hike-day-fun.jpg);
+    height: auto;
+}
+.navbar{
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10000;
+    margin:0;
+}
+.card-img1{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 0.5s all ease-in-out;
+}
+
+.card-img1 img{
+    width:100%;
+    
+}
+
+.card-img1:hover {
+    transform: scale(1.05);
+}
+
+.price1{
+    display: inline; 
+    float: right; 
+    color: #7EA0FF;
+}
+
+.Eventsdate1{
+    border-radius: 15px;
+    background-color: #f0f4ff;
+    border: none;
+    display: inline;
+}
+
+.about-us-text{
+    color: #7EA0FF;
+}
+
+
+
+.about-us-text{
+    color: #7EA0FF;
+}
+
+
+
+.review-image{
+    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/gallery/section_bg1.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    margin-top: -50px;
+    height: 400px;
+    width: 100%;
+}
+
+.testimonial-area .testimonial-caption {
+    padding-left: 80px;
+}
+
+.testimonial-area .testimonial-caption .testimonial-top-cap h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.review-title1{
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.testimonial-founder{
+    margin-top: 90px;
+}
+
+.review-text1{
+    color: white;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+body::-webkit-scrollbar{
+    width: 9px;
+    height: 9px;
+    }
+    body::-webkit-scrollbar-thumb{
+    background: #B3AFB3;
+    border-radius: 0px;
+    }
+    body::-webkit-scrollbar-thumb:hover{
+    background: #B3AFB3;
+    }
+    body::-webkit-scrollbar-track{
+    background: #DBDBDB;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+    }
+
+
+
+
+
+    bottom-padding {
+        padding-bottom: 120px;
+    }
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    element.style {
+        background-image: url(https://media.discordapp.net/attachments/914146486227464243/916656205546549308/video-bg.png?width=967&height=473);
+    }
+    .video-area {
+        position: relative;
+        height: 560px;
+        border-radius: 20px;
+    }
+    .section-img-bg2 {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .align-items-center {
+        -ms-flex-align: center!important;
+        align-items: center!important;
+    }
+    .video-area .video-wrap {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+    }
+    .video-area .video-wrap .video-icon a {
+        margin-bottom: 20px;
+        display: block;
+        position: absolute;
+    }
+    a, button {
+        color: #fff;
+        outline: medium none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+    
+     
+     @media (min-width: 768px) and (max-width: 1279px) { 
+       
+          .Card1{
+              display: none;
+          }
+
+      }
+     
+    
+     @media (min-width: 1280px){
+        
+     }
+     
+
+@keyframes bus-moving {
+    0% {margin-left: 20%;}
+    20% {margin-left: 5%;}
+    100% {margin-left: 20%;}
+}
+
+
+
